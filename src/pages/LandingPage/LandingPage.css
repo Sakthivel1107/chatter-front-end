@@ -1,0 +1,171 @@
+.landing-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    background: #fff;
+    overflow: hidden;
+}
+
+/* LEFT */
+
+.left-section {
+    width: 50%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 60px;
+}
+
+.logo-icon {
+    font-size: 60px;
+    color: #12b7b0;
+}
+
+.logo h1 {
+    font-size: 60px;
+    color: #12b7b0;
+}
+
+.left-section h2 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.left-section h2 span {
+    color: #18a558;
+}
+
+.left-section p {
+    font-size: 24px;
+    color: gray;
+    line-height: 1.8;
+    margin-bottom: 50px;
+}
+
+.buttons {
+    display: flex;
+    gap: 25px;
+}
+
+.buttons button {
+    width: 220px;
+    height: 65px;
+    border-radius: 12px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    transition: 0.3s;
+}
+
+.login-btn {
+    background: #159947;
+    color: white;
+}
+
+.login-btn:hover {
+    background: #12793a;
+}
+
+.register-btn {
+    background: white;
+    color: #159947;
+    border: 2px solid #159947 !important;
+}
+
+.register-btn:hover {
+    background: #f2fff7;
+}
+
+/* RIGHT */
+
+.right-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.phone-mockup {
+    width: 350px;
+    height: 650px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.phone-header {
+    height: 70px;
+    background: #159947;
+    color: white;
+    border-radius: 20px 20px 0 0;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 20px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+}
+
+.message {
+    height: 70px;
+    width: 200px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.message.left {
+    background: #f1f1f1;
+}
+
+.message.right {
+    background: #d8f8d8;
+    margin-left: auto;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+    .landing-page {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .phone-mockup {
+        margin-top: 50px;
+        width: 280px;
+        height: 550px;
+    }
+
+    .left-section h2 {
+        font-size: 50px;
+    }
+}

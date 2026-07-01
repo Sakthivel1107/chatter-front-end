@@ -1,0 +1,68 @@
+.cp-overlay{
+    position: absolute;
+    inset: 0;
+    background: white;
+    z-index: 10000;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow-y: auto;
+}
+
+@media (max-height: 600px) {
+    .cp-overlay{
+        padding-top: 60px;
+    }
+}
+.contact-profile-img{
+    width: 120px;
+    height: 120px;
+}
+
+.cp-icon{
+    color: rgb(2, 153, 2);
+    height: 40px;
+    background-color: rgb(190, 254, 190);
+}
+
+.cp-box{
+    border: 1px solid rgb(238,238,238);
+    padding-inline: 5%;
+    padding-block: 5px;
+    border-radius: 10px;
+}
+
+.rc:hover{
+    cursor: pointer;
+}
+.dh-icon{
+    color: red;
+    height: 40px;
+    background-color: rgb(253, 209, 209);
+}
+
+.delete-option{
+    width: 90%;
+    position: absolute;
+    z-index: 11000;
+    background-color: white;
+    box-shadow: 0px 0px 10px lightgray;
+}
+
+.do:hover{
+    cursor: pointer;
+}
+
+.block-option{
+    width: 90%;
+    position: absolute;
+    z-index: 11000;
+    background-color: white;
+    box-shadow: 0px 0px 10px lightgray;
+}
+
+.bo:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,182 @@
+.mainl-container{
+    background-color: rgb(241, 254, 254);
+    height: 100vh;
+    align-items: center;
+}
+
+.forml-container{
+    width: 450px;
+    height: 605px;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(227, 227, 227);
+    padding: 50px;
+}
+
+.designl-container{
+    width: 600px;
+    height: 605px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(224, 246, 246);
+    box-shadow: 0 0 10px rgb(227,227,227);
+}
+
+@media (max-width:996px) {
+    .forml-container{
+        border-radius: 20px;
+    }
+}
+
+@media (max-width:502px) {
+    .forml-container{
+        border-radius: 0;
+        height: 100vh;
+        padding: 0;
+        padding-top: 20px;
+        align-items: center;
+        padding-right: 30px;
+        padding-right: 0;
+    }
+    .mainl-container{
+        background-color: white;
+        align-items: normal;
+    }
+    .inputl-div{
+        width: 95% !important;
+    }
+    .flinput{
+        width: 85%;
+    }
+    .forml-div{
+        align-items: start !important;
+    }
+    .ftl{
+        font-size: 10px !important;
+    }
+}
+
+.chat-icon{
+    color: rgb(2, 189, 189);
+    font-size: 45px;
+    
+    -webkit-text-stroke: 1px currentColor;
+}
+
+.fh2{
+    color: rgb(2, 189, 189);
+    font-weight: 600;
+}
+
+.fh3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    color: rgb(77, 77, 77);
+}
+
+.submit:hover{
+    background-color: rgb(3, 163, 163);
+}
+
+.flinput{
+    outline: none;
+    border: none;
+    width: 90%;
+    height: 30px;
+    padding-left: 5px;
+}
+.fp{
+    width: 100%;
+    padding-right: 15px;
+}
+.submit{
+    width: 100%;
+    color: white;
+    background-color: rgb(2, 189, 189);
+    padding-block: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+.gsubmit{
+    width: 100%;
+    
+    padding-block: 10px;
+    border: 1px solid rgb(194, 192, 192);
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.gsubmit:hover{
+    background-color: rgb(234, 233, 233);
+}
+.ficon{
+    -webkit-text-stroke: 0.5px currentColor;
+}
+
+.inputl-div{
+    width: 350px;
+    border: 1px solid rgb(194, 192, 192);
+    padding: 5px;
+    border-radius: 10px;
+}
+.fline{
+    width: 31%;
+    height: 1px;
+    background-color: rgb(198, 197, 197);
+}
+
+.hline{
+    width: 50px;
+    height: 5px;
+    background-color: rgb(3, 163, 163);
+}
+.d-img{
+    height: 340px;
+    width: 450px;
+}
+.dl-div{
+    height: 80px;
+    width: 170px;
+    background-color: white;
+    border-radius: 15px;
+}
+.dicon{
+    background-color: rgb(3, 163, 163);
+    color: white;
+    padding-top: 2px;
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    -webkit-text-stroke: 0.5px currentColor;
+}
+.fh6{
+    color: rgb(71, 70, 70);
+}
+.gl-box{
+    padding-inline: 8px;
+    padding-block: 10px;
+    background-color: rgb(204, 238, 238);
+    border-radius: 10px;
+}
+
+.giftl{
+    background-color: rgb(3, 163, 163);
+    color: white;
+    padding-top: 3px;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    -webkit-text-stroke: 0.5px currentColor;
+}
+
+.heading{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+}
+
+.hov:hover{
+    cursor: pointer;
+}

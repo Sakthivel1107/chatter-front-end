@@ -1,0 +1,33 @@
+.nc-overlay{
+    position: absolute;
+    inset: 0;
+    background: white;
+    z-index: 10000;
+    transition: all 0.3s;
+    min-height: 100%;
+    height: fit-content !important;
+    overflow-y: auto;
+}
+
+.new-contact-img{
+    width: 120px;
+    height: 120px;
+}
+
+.nc-icon{
+    color: rgb(2, 153, 2);
+    height: 40px;
+    background-color: rgb(190, 254, 190);
+}
+
+.nc-box{
+    border: 1px solid rgb(238,238,238);
+    padding-inline: 5%;
+    padding-block: 5px;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.rc:hover{
+    cursor: pointer;
+}

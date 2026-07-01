@@ -1,0 +1,112 @@
+.profile-img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+.ni{
+    position: relative;
+    width: 120px;
+    height: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.camera-icon{
+    color: white;
+    background-color: rgb(5, 199, 134);
+    border: 2px solid white;
+    height: fit-content;
+    width: fit-content;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.p-icon{
+    color: rgb(2, 153, 2);
+    height: 40px;
+    background-color: rgb(190, 254, 190);
+}
+
+.logout-icon{
+    color: rgb(253, 57, 57);
+    height: 40px;
+    background-color: rgb(245, 203, 203);
+}
+
+.p-box{
+    border: 1px solid rgb(238,238,238);
+    padding-inline: 5%;
+    padding-block: 5px;
+    border-radius: 10px;
+}
+
+.p-input{
+    border: none;
+    outline: none;
+    height: 20px;
+    width: 88%;
+}
+
+.p-select{
+    border: none;
+    outline: none;
+    height: 23px;
+    width: 88%;
+}
+.in-box{
+    border-bottom: 1px solid rgb(109, 253, 179);
+}
+
+@media (max-width:374px) {
+    .lo{
+        font-size: 10px;
+    }
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(162, 161, 161, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+    transition: all 0.3s;
+}
+
+.chatImgProfile{
+    width: 80%;
+    background-color: white;
+}
+
+@media (max-width: 350px) {
+    .chatImgProfile{
+        width: 90%;
+    }
+}
+.chatImg{
+    width: 100%;
+    height: 270px;
+}
+
+.view-contact-profile{
+    border: none;
+    padding-block: 10px;
+    color: white;
+    font-weight: 600;
+    background-color: rgb(2, 233, 156);
+    transition: all 0.3s;
+}
+
+.view-contact-profile:hover{
+    background-color: rgb(2, 206, 138);
+}
+
+.xc:hover{
+    cursor: pointer;
+}

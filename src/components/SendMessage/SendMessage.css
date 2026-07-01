@@ -1,0 +1,22 @@
+.send-msg{
+    max-width: 50%;
+    min-width: 200px;
+    height: auto;
+    background-color: rgb(199, 250, 199);
+    border-radius: 20px;
+    word-break: break-word;
+}
+
+.msg-meta{
+    float: right;
+}
+
+@media (max-width:790px) {
+    .send-msg{
+        max-width: 80% !important;
+    }
+}
+
+.border{
+    box-shadow: 0px 0px 15px lightgrey;
+}

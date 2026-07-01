@@ -1,0 +1,22 @@
+.received-msg{
+    max-width: 50%;
+    min-width: 200px;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    word-break: break-word;
+}
+
+.received-msg-meta{
+    float: right;
+}
+
+@media (max-width:790px) {
+    .received-msg{
+        max-width: 80% !important;
+    }
+}
+
+.border{
+    box-shadow: 0px 0px 15px lightgrey;
+}

@@ -1,0 +1,16 @@
+.chat-messages{
+    background-color: #f7f5f2;
+    flex: 1;
+    overflow-y: auto;
+    min-height: 0;
+}
+
+.date-separator{
+    align-self: center;
+    background: #d9fdd3;
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #54656f;
+    margin: 10px 0;
+}

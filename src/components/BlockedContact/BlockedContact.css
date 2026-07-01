@@ -1,0 +1,35 @@
+.blocked-contact{
+    width: 95%;
+    padding-inline: 10px;
+    border-bottom: 1px solid rgb(238,238,238);
+}
+
+.blocked-contact-img{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+}
+.blocked-content-uid{
+    font-size: 12px;
+}
+.unblock-btn{
+    color: red;
+    border: 1px red solid;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.unblock-btn:hover{
+    color: white;
+    background-color: green;
+    border: 1px solid green;
+}
+
+@media (max-width:330px) {
+    .blocked-contact-uid{
+        font-size: 10px;
+    }
+    .blocked-contact{
+        padding-inline: 2px;
+    }
+}

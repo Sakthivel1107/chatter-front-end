@@ -1,0 +1,52 @@
+.contact{
+    width: 100%;
+    padding-inline: 10px;
+    border-bottom: 1px solid rgb(238,238,238);
+}
+
+.contact-img{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+}
+.uid{
+    font-size: 12px;
+}
+@media (max-width:330px) {
+    .uid{
+        font-size: 10px;
+    }
+    .contact{
+        padding-inline: 2px;
+    }
+}
+
+.icon-div{
+    height: 35px;
+    width: 35px;
+    background-color: rgb(8, 240, 163);
+}
+.plus-icon{
+    -webkit-text-stroke: 0.3px currentColor;
+}
+
+.check-div{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(224, 254, 226);
+}
+
+.check-icon{
+    color: green;
+}
+
+.unblock{
+    border: none;
+    background-color: rgb(32, 184, 133);
+    color: white;
+    transition: all 0.2s;
+}
+
+.unblock:hover{
+    background-color: rgb(26, 140, 102);
+}

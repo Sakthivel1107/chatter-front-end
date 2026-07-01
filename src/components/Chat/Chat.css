@@ -1,0 +1,39 @@
+.chat{
+    padding-inline: 10px;
+    border-bottom: 1px solid rgb(238,238,238);
+}
+
+.chat-img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.chat-details{
+    flex: 1;
+}
+
+.last-seen , .unread-msg{
+    font-size: 13px;
+}
+
+.unread-msg-count{
+    background-color: rgb(8, 240, 163);
+    font-size: 13px;
+    font-weight: 600;
+    padding-inline: 9px;
+    padding-block: 3px;
+}
+
+@media (max-width:320px) {
+    .last-seen , .unread-msg{
+        font-size: 11px;
+    }
+    .chat{
+        padding-inline: 2px;
+    }
+}
+
+.chat-img:hover{
+    cursor: pointer;
+}

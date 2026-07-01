@@ -1,0 +1,21 @@
+.contact-us{
+    width: 100%;
+}
+.cu{
+    text-align: center;
+    font-family: monospace;
+    color: rgb(2, 125, 125);
+}
+.cfl{
+    display: block;
+    color: gray;
+}
+.cu-input{
+    outline: none;
+    border: 1px solid gainsboro;
+}
+.cu-textarea{
+    min-height: 100px;
+    outline: none;
+    border: 1px solid gainsboro;
+}

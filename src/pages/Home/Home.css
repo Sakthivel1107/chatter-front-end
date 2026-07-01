@@ -1,0 +1,170 @@
+.main{
+    background-color: rgb(241, 254, 250);
+}
+.main-div{
+    width: 400px !important;
+    height: 100vh !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: white;
+    border-right: 1px solid rgb(238, 238, 238);
+}
+@media (max-width:399px) {
+    .main-div{
+        flex: 1;
+        border: none;
+        box-shadow: none;
+        border-radius: 0px !important;
+    }
+    .option{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:790px) {
+    .main-div{
+        border-radius: 20px;
+        border: 1px solid rgb(238, 238, 238);
+        box-shadow: 0 0 10px rgb(238, 238, 238);
+    }
+}
+
+.header{
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+.middle{
+    flex: 1;
+    overflow-y: auto;
+    min-height: 0;
+}
+.menu-bar{
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid rgb(238, 238, 238);
+    padding-top: 2px;
+}
+.options{
+    transition: all 0.2s;
+}
+
+.options:hover{
+    color: rgb(2, 153, 2);
+    .option-icon{
+        background-color: rgb(190, 254, 190);
+    }
+}
+
+.option{
+    font-weight: 500;
+}
+
+.option-icon{
+    padding-inline: 13px;
+    transition: all 0.2s;
+    border-radius: 10px;
+}
+
+.active-options{
+    color: rgb(2, 153, 2);
+    .option-icon{
+        background-color: rgb(190, 254, 190);
+    }
+}
+
+.language-modal-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+.language-modal{
+    width: 90%;
+    max-width: 400px;
+
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.lang{
+    background-color: rgb(31, 253, 179);
+    transition: all 0.2s;
+    border: none;
+}
+
+.lang:hover{
+    cursor: pointer;
+    background-color: rgb(2, 233, 156);
+}
+
+.chat-box{
+    height: 100vh !important;
+    flex: 1;
+}
+
+@media (max-width: 790px) {
+    .chat-box{
+        display: none !important;
+    }
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(162, 161, 161, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+    transition: all 0.3s;
+}
+
+.chatImgProfile{
+    width: 80%;
+    background-color: white;
+}
+
+@media (max-width: 350px) {
+    .chatImgProfile{
+        width: 90%;
+    }
+}
+.chatImg{
+    width: 100%;
+    height: 270px;
+}
+
+.view-contact-profile{
+    border: none;
+    padding-block: 10px;
+    color: white;
+    font-weight: 600;
+    background-color: rgb(2, 233, 156);
+    transition: all 0.3s;
+}
+
+.view-contact-profile:hover{
+    background-color: rgb(2, 206, 138);
+}
+
+.xc:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.chats{
+    width: 100%;
+}
+
+.search-bar{
+    width: 95%;
+    background-color: rgb(252, 252, 252);
+}
+
+.search-icon{
+    color: rgb(148, 147, 147);
+    -webkit-text-stroke: 0.5px currentColor;
+}
+.chat-search{
+    width: 87%;
+    border: none;
+    outline: none;
+    background-color: rgb(252, 252, 252);
+}
