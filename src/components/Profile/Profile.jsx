@@ -86,14 +86,14 @@ const Profile = () => {
       }
   return (
     <div className='d-flex flex-column gap-2 align-items-center' style={{position:"relative",zIndex:"0"}}>
-        {viewImg && <div className={viewImg ? "overlay":"d-none"} >
+        {viewImg && <div className={viewImg ? "p-overlay":"d-none"} >
               <div className='chatImgProfile d-flex flex-column' style={{backgroundColor:"none"}}>
                 <i className='bi bi-x-lg fs-4 p-2 ms-auto xc' style={{WebkitTextStroke:"0.5px currentColor",color:"rgb(2, 233, 156)"}} onClick={() => setViewImg(false)}></i>
                 <img src={user.url} alt={user.name} className='chatImg'/>
               </div>
         </div>}
         {viewBlockedContactProfile && <BlockedContactProfile bContact={blockedContact} setBlockedContact={setBlockedContact} setViewBlockedContactProfile={setViewBlockedContactProfile}/>}
-        {<div className={Object.keys(blockedContact).length !== 0 ? "overlay":"d-none"}>
+        {<div className={Object.keys(blockedContact).length !== 0 ? "p-overlay":"d-none"}>
               <div className='chatImgProfile d-flex flex-column'>
                 <i className='bi bi-x-lg fs-4 p-2 ms-auto xc' style={{WebkitTextStroke:"0.5px currentColor",color:"rgb(2, 233, 156)"}} onClick={() => setBlockedProfile({})}></i>
                 <img src={blockedContact.url} alt={blockedContact.name} className='chatImg'/>
