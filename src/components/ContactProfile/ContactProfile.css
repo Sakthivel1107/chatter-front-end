@@ -11,11 +11,6 @@
     overflow-y: auto;
 }
 
-@media (max-height: 600px) {
-    .cp-overlay{
-        padding-top: 60px;
-    }
-}
 .contact-profile-img{
     width: 120px;
     height: 120px;
