@@ -38,12 +38,9 @@ const Login = () => {
                 setLoading(false);
                 navigate('/home');
             }
-            else{
-                setLoading(false);
-                toast.error("Please try again later.");
-            }
 
         } catch (error) {
+            setLoading(false);
             toast.error("Please try again credentials are not valid");
             console.error(error);
         }
