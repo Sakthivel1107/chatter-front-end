@@ -95,7 +95,7 @@ const Profile = () => {
         {viewBlockedContactProfile && <BlockedContactProfile bContact={blockedContact} setBlockedContact={setBlockedContact} setViewBlockedContactProfile={setViewBlockedContactProfile}/>}
         {<div className={Object.keys(blockedContact).length !== 0 ? "overlay":"d-none"}>
               <div className='chatImgProfile d-flex flex-column'>
-                <i className='bi bi-x-lg fs-4 p-2 ms-auto xc' style={{WebkitTextStroke:"0.5px currentColor",color:"rgb(2, 233, 156)"}} onClick={() => setContactProfile({})}></i>
+                <i className='bi bi-x-lg fs-4 p-2 ms-auto xc' style={{WebkitTextStroke:"0.5px currentColor",color:"rgb(2, 233, 156)"}} onClick={() => setBlockedProfile({})}></i>
                 <img src={blockedContact.url} alt={blockedContact.name} className='chatImg'/>
                 <button className='view-contact-profile' onClick={() => setViewBlockedContactProfile(true)}>View Profile</button>
               </div>
