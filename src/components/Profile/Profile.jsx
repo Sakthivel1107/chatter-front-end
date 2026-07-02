@@ -70,7 +70,8 @@ const Profile = () => {
           const formData = new FormData();
           formData.append("file",file);
           async function update() {
-              const response = await axios.put("http://localhost:8080/api/updateImage",formData,{
+            try{
+              const response = await axios.put("https://chatter-back-end-api.onrender.com/api/updateImage",formData,{
                   headers:{
                       "Content-Type":"multipart/form-data",
                       "Authorization": `Bearer ${token}`
@@ -81,6 +82,10 @@ const Profile = () => {
               {
                 setLoader(false);
               }
+            }catch(error){
+              setLoader(false);
+              console.log(error);
+            }
           }
           update();
       }
