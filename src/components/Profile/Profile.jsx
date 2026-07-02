@@ -73,7 +73,6 @@ const Profile = () => {
             try{
               const response = await axios.put("https://chatter-back-end-api.onrender.com/api/updateImage",formData,{
                   headers:{
-                      "Content-Type":"multipart/form-data",
                       "Authorization": `Bearer ${token}`
                   },
               });
