@@ -1,6 +1,6 @@
 .loader-container {
     width: 100%;
-    height: 100vh; /* Or 100% if parent has a fixed height */
+    height: 100vh;
 
     display: flex;
     flex-direction: column;
