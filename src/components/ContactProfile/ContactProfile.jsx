@@ -1,10 +1,10 @@
 import React, { useContext, useState } from 'react';
 import './ContactProfile.css';
 import { StoreContext } from '../../context/StoreContext';
-import { sendChatOffStatus,blockContact, deleteAllMessages, deleteContactAndMessages, formatTimestamp, removeContact } from '../../services/userService';
+import { blockContact, deleteAllMessages, deleteContactAndMessages, formatTimestamp, removeContact } from '../../services/userService';
 
 const ContactProfile = () => {
-  const {user,contactProfile,viewContactProfile,setViewContactProfile,chatPageActiveUser,setChatPageActive,setUser,setContacts} = useContext(StoreContext);
+  const {user,contactProfile,setContactProfile,viewContactProfile,setViewContactProfile,chatPageActiveUser,setChatPageActive,setUser,setContacts} = useContext(StoreContext);
   const [blockOption,setBlockOption] = useState(false);
   const [deleteOption,setDeleteOption] = useState(false);
   const handleDeleteContact = async () => {
