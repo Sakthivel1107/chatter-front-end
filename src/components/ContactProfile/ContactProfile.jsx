@@ -15,6 +15,7 @@ const ContactProfile = () => {
                   {
                     sendChatOffStatus({senderId:chatPageActiveUser.id,receiverId:user.id});
                     setChatPageActive(false);
+                    setChatPageActiveUser({});
                   }
                   setUser(prev => ({...prev,contacts:prev.contacts.filter(contact => contact !== contactProfile.id)}));
                   setViewContactProfile(false);
@@ -46,6 +47,7 @@ const ContactProfile = () => {
                   if(ContactProfile.id === chatPageActiveUser.id){
                     sendChatOffStatus({senderId:chatPageActiveUser.id,receiverId:user.id});
                     setChatPageActive(false);
+                    setChatPageActiveUser({});
                   }
                   setUser(prev => ({...prev,contacts:prev.contacts.filter(contact => contact !== contactProfile.id)}));
                   setViewContactProfile(false);

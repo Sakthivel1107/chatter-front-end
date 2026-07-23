@@ -35,6 +35,8 @@ export const StoreContextProvider = (props) => {
     const logout = () => {
         setToken(null);
         setUser({});
+        setChatPageActive(false);
+        setChatPageActiveUser({});
         localStorage.removeItem("token");
         sessionStorage.removeItem("token");
         stompDisconnect();
