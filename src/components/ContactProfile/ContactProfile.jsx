@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import './ContactProfile.css';
 import { StoreContext } from '../../context/StoreContext';
-import { blockContact, deleteAllMessages, deleteContactAndMessages, formatTimestamp, removeContact } from '../../services/userService';
+import { sendChatOffStatus,blockContact, deleteAllMessages, deleteContactAndMessages, formatTimestamp, removeContact } from '../../services/userService';
 
 const ContactProfile = () => {
   const {user,contactProfile,viewContactProfile,setViewContactProfile,chatPageActiveUser,setChatPageActive,setUser,setContacts} = useContext(StoreContext);
