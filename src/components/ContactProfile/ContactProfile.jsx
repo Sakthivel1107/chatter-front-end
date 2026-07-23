@@ -42,11 +42,13 @@ const ContactProfile = () => {
   
       const handleDeleteContactAndMessages = async () => {
           try {
+              if(ContactProfile.id === chatPageActiveUser.id){
+                setChatPageActive(false);
+              }
               const response = await deleteContactAndMessages(contactProfile.id);
               if(response.status === 200){
                   if(ContactProfile.id === chatPageActiveUser.id){
                     sendChatOffStatus({senderId:chatPageActiveUser.id,receiverId:user.id});
-                    setChatPageActive(false);
                     setChatPageActiveUser({});
                   }
                   setUser(prev => ({...prev,contacts:prev.contacts.filter(contact => contact !== contactProfile.id)}));
